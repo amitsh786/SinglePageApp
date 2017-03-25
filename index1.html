@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sty.css">
+    <script src="bower_components/handlebars/handlebars.js" charset="utf-8"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+</head>
+
+<body id="b1">
+    <div class="blue-bg-nav">
+        <div class="container">
+            <form action="#" method="post" id="form_id">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="header-tp">
+                            <nav class="navbar navbar-default navbar-static-top">
+                                <div class="container">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+
+                                    </div>
+                                    <div id="navbar" class="navbar-collapse collapse">
+                                        <form class="form-inline">
+                                            <a class="navbar-brand" href="#home">HOME</a>
+                                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#SignUp"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                                                    <li><a href="#Login">Login</a></li>
+
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    <nav-collapse>
+                                </div>
+                            </nav>
+                        </header>
+                        <div id="page-container"></div>
+
+                        <script id="home-page-template" type="text/x-handlebars-template">
+                            <div id="home-page" class="page active">
+                                <p>
+                                    <h1>Welcome to the BridgeLabz Home Page</h1>
+                                </p>
+                            </div>
+                        </script>
+                        <script id="about-page-template" type="text/x-handlebars-template">
+                            <div id="about-page" class="page">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control-form " id="fname" placeholder="enter the first name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control-form " id="lname" placeholder="enter the Last name">
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="UserName">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control-form " id="dateentry">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+            						<input type="checkbox"> Remember me
+            					</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button type="button" onclick="userObj()" class="btn-lgin">Register</button>
+                                    <button type="reset" class="btn-lgin">reset</button>
+                                </form>
+                            </div>
+                        </script>
+                        <script id="contact-page-template" type="text/x-handlebars-template">
+                            <div id="contact-page" class="page">
+
+                                <form>
+
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="UserName">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+                                    </div>
+                                    <button type="button" onclick="fetchUser()" class="btn-lgin">Signup </button>
+                                    <hr>
+
+                                    <div class="modal-footer">
+                                        <div class="row">
+
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+
+
+                        </script>
+                        <script src="js/app.js" type="text/javascript"></script>
+                        <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

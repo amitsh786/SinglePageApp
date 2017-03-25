@@ -1,0 +1,21 @@
+{
+  "name": "TUDUAPPASSIGNMENT",
+  "homepage": "https://github.com/jackvial/jquery-spa-example",
+  "authors": [
+    "amit <amitsharmajoda92@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~3.0.3",
+    "bootstrap": "~3.3.5"
+  }
+}
